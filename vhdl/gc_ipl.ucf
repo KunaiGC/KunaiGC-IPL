@@ -1,13 +1,22 @@
-NET exi_miso[0] LOC = P42;
-NET exi_miso[1] LOC = P41;
-NET exi_miso[2] LOC = P40;
-NET exi_miso[3] LOC = P39;
+#Shuriken2KunaiGC
+#NET exi_miso[0] LOC = P28;
+#NET exi_miso[1] LOC = P29;
+#NET exi_mosi LOC = P30 | BUFG = DATA_GATE;
+#NET exi_cs LOC = P32;
+#NET exi_clk LOC = P31;
+
+#KunaiGC
+NET exi_miso[0] LOC = P40;
+NET exi_miso[1] LOC = P39;
 NET exi_mosi LOC = P43 | BUFG = DATA_GATE;
 NET exi_cs LOC = P38;
-NET exi_clk LOC = P44 | BUFG = CLK;
+NET exi_clk LOC = P44;
+
+
+NET led_pth LOC = P41;
+NET led_dis LOC = P42;
 
 # Flash
-NET f_miso LOC = P33;
-NET f_mosi LOC = P34;
-NET f_cs LOC = P32;
-NET f_clk LOC = P36;
+NET f_miso LOC = P13;
+NET f_mosi LOC = P12;
+NET f_cs LOC = P14;
